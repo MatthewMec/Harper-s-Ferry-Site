@@ -1,0 +1,85 @@
+#content {
+    max-width: 1600px;
+    margin: 0 auto; /* Centers the content */
+    padding: 0 20px; /* Adds a little space on the sides */
+}
+
+/* Center navigation links */
+nav a {
+    text-align: center;
+    display: block; /* Ensures they stack nicely if needed */
+  }
+  
+  /* Centering the hero message headers */
+  #hero-msg h1, #hero-msg h4 {
+    text-align: center;
+  }
+  
+  /* Centering the button box */
+  .button-box {
+    text-align: center;
+  }
+  
+  /* Centering main section content */
+  main section {
+    text-align: center;
+  }
+  
+  /* Styling the background container */
+#background {
+    width: 100%;       /* Make it span the full width */
+    height: 300px;     /* Adjust the height as needed */
+    background-color: #023047; /* Change this color to match your theme */
+    position: absolute;
+    z-index: -1; /* Push it behind content */
+  }
+
+  
+#background {
+    height: 725px;
+}
+
+body {
+    background-color: #fcfbfb; 
+}
+header {
+    background-color:rgba(20,30,13, .7);
+}
+nav a:hover {
+    background-color: black;
+}
+
+nav a:hover {
+    background-color: black;
+    color: #d9c2a3;
+}    
+
+.icon {
+    width: 80px;
+}
+
+nav a {
+    text-align: center;
+    color: #fcfbfb;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+ 
+footer p a:hover {
+    text-decoration: underline;
+}    
+.logo {
+    width: 100px; 
+    height: auto;
+    position: fixed;
+    top: 8px;
+    right: 10px;
+}
+
+  
+               
+                
