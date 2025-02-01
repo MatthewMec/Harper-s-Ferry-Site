@@ -27,11 +27,11 @@ nav a {
   
   /* Styling the background container */
 #background {
-    width: 100%;       /* Make it span the full width */
-    height: 300px;     /* Adjust the height as needed */
-    background-color: #023047; /* Change this color to match your theme */
+    width: 100%;       
+    height: 300px;     
+    background-color: #023047; 
     position: absolute;
-    z-index: -1; /* Push it behind content */
+    z-index: -1; 
   }
 
   
@@ -43,7 +43,7 @@ body {
     background-color: #fcfbfb; 
 }
 header {
-    background-color:rgba(20,30,13, .7);
+    background-color:#023047;
 }
 nav a:hover {
     background-color: black;
@@ -66,10 +66,12 @@ nav a {
 
 footer p {
     font-size: 1.2em;
+    color: #fcfbfb;
 }
 
  
 footer p a:hover {
+    color: white;
     text-decoration: underline;
 }    
 .logo {
@@ -80,6 +82,8 @@ footer p a:hover {
     right: 10px;
 }
 
-  
-               
+.msg {
+    color: white;  /* Makes all text inside .msg white */
+}
+
                 
