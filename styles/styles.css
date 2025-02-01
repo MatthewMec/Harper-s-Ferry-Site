@@ -1,101 +1,49 @@
+/* Content container */
 #content {
     max-width: 1600px;
     margin: 0 auto; /* Centers the content */
     padding: 0 20px; /* Adds a little space on the sides */
 }
 
-/* Center navigation links */
-nav a {
+/* Centering elements */
+#hero-msg h1, #hero-msg h4,
+.button-box, 
+main section {
     text-align: center;
-    display: block; /* Ensures they stack nicely if needed */
-  }
-  
-  /* Centering the hero message headers */
-  #hero-msg h1, #hero-msg h4 {
-    text-align: center;
-  }
-  
-  /* Centering the button box */
-  .button-box {
-    text-align: center;
-  }
-  
-  /* Centering main section content */
-  main section {
-    text-align: center;
-  }
-  
-  /* Styling the background container */
+}
+
+/* Styling the background container */
 #background {
     width: 100%;       
-    height: 300px;     
-    background-color: #023047; 
+    height: 725px; /* Combined the height */
+    background-color: #023047;
     position: absolute;
     z-index: -1; 
-  }
-
-  
-#background {
-    height: 725px;
 }
 
+/* Body and header styles */
 body {
-    background-color: #fcfbfb; 
-}
-header {
-    background-color:#023047;
-}
-nav a:hover {
-    background-color: black;
-}
-
-nav a:hover {
-    background-color: black;
-    color: #d9c2a3;
-}    
-
-.icon {
-    width: 80px;
-}
-
-footer p {
-    font-size: 1.2em;
-    color: #fcfbfb;
-}
-
- 
-footer p a:hover {
-    color: white;
-    text-decoration: underline;
-}    
-.logo {
-    width: 100px; 
-    height: auto;
-    position: absolute;
-    top: 8px;
-    left: 10px;
-}
-
-.msg {
-    color: white; 
-    text-decoration: none;
-}
-#hero-img {
-    width: 100%; 
-    height: auto; 
+    background-color: #fcfbfb;
 }
 
 header {
+    background-color: #023047;
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
     padding: 10px 20px; 
 }
 
-#logo_link {
-    flex: 0 1 auto;
+/* Logo */
+.logo {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 8px;
+    left: 10px;
 }
 
+/* Navigation styles */
 nav {
     display: flex; 
 }
@@ -104,7 +52,91 @@ nav a {
     margin: 0 15px;
     text-decoration: none; 
     color: white;
+    text-align: center; /* Combined text-align here */
 }
+
 nav a:hover {
     color: #FFB703;
+    background-color: black;
 }
+
+/* Icon size */
+.icon {
+    width: 80px;
+}
+
+/* Footer styles */
+footer p {
+    font-size: 1.2em;
+    color: #fcfbfb;
+}
+
+footer p a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Hero image */
+#hero-img {
+    width: 100%; 
+    height: auto; 
+}
+
+/* Styling the message section */
+.msg {
+    color: white; 
+    text-decoration: none;
+}
+/* Default margins (for larger screens) */
+#content {
+    max-width: 1600px;
+    margin: 0 auto; /* Centers the content */
+    padding: 0 20px; /* Adds space on the sides */
+}
+
+/* Media Query for Tablets and Below (screens 768px and smaller) */
+@media (max-width: 768px) {
+    #content {
+        padding: 0 10px; /* Smaller padding for tablets */
+    }
+
+    header {
+        padding: 10px 10px; /* Adjust header padding for smaller screens */
+    }
+
+    nav a {
+        margin: 0 10px; /* Reduce space between links for smaller screens */
+    }
+
+    .logo {
+        width: 80px; /* Smaller logo for smaller screens */
+    }
+}
+
+/* Media Query for Mobile Phones (screens 480px and smaller) */
+@media (max-width: 480px) {
+    #content {
+        padding: 0 5px; /* Even smaller padding for mobile phones */
+    }
+
+    header {
+        padding: 8px 8px; /* Even smaller header padding */
+    }
+
+    nav a {
+        margin: 0 5px; /* Reduce space between links even more for phones */
+    }
+
+    .logo {
+        width: 60px; /* Even smaller logo for mobile phones */
+    }
+
+    #hero-msg h1, #hero-msg h4 {
+        font-size: 1.5em; /* Adjust text size for mobile */
+    }
+
+    .button-box {
+        margin-top: 20px; /* Adjust button box margin for mobile */
+    }
+}
+
