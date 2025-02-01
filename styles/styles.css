@@ -58,12 +58,6 @@ nav a:hover {
     width: 80px;
 }
 
-nav a {
-    text-align: center;
-    color: #fcfbfb;
-    text-decoration: none;
-}
-
 footer p {
     font-size: 1.2em;
     color: #fcfbfb;
@@ -77,13 +71,40 @@ footer p a:hover {
 .logo {
     width: 100px; 
     height: auto;
-    position: fixed;
+    position: absolute;
     top: 8px;
-    right: 10px;
+    left: 10px;
 }
 
 .msg {
-    color: white;  /* Makes all text inside .msg white */
+    color: white; 
+    text-decoration: none;
+}
+#hero-img {
+    width: 100%; 
+    height: auto; 
 }
 
-                
+header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+}
+
+#logo_link {
+    flex: 0 1 auto;
+}
+
+nav {
+    display: flex; 
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none; 
+    color: white;
+}
+nav a:hover {
+    color: #FFB703;
+}
